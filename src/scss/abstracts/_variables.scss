@@ -1,0 +1,100 @@
+/* Colors */
+$theme-colors: (
+    primary: #0373DB,
+    secondary:#747474,
+    third: #FFFFFF,
+    success: #00BB2C,
+    danger: #F2443C,
+    warning: #F8AA09,
+    info: #05B0E7,
+    light: #F8F9FE,
+    dark: #343a40,
+    white: #fff,
+    black: #202124
+) !default;
+
+$color-primary: map-get($theme-colors, 'primary') !default;
+$color-secondary: map-get($theme-colors, 'secondary') !default;
+$color-success: map-get($theme-colors, 'success') !default;
+$color-danger: map-get($theme-colors, 'danger') !default;
+$color-warning: map-get($theme-colors, 'warning') !default;
+$color-info: map-get($theme-colors, 'info') !default;
+$color-light: map-get($theme-colors, 'light') !default;
+$color-dark: map-get($theme-colors, 'dark') !default;
+$color-white: map-get($theme-colors, 'white') !default;
+$color-black: map-get($theme-colors, 'black') !default;
+
+/* Fonts */
+$font-base: "Arial", sans-serif !default;
+$font-size-base: 1.3rem !default;
+$line-height-base: (19/14) !default;
+
+/* Text size */
+$text-size: (
+    heading-1: 2rem,
+    heading-2: 1.6rem,
+    heading-3: 1.3rem,
+    heading-4: 1.2rem,
+    heading-5: 1.1rem,
+    heading-6: 1rem,
+    body-1: 1.6rem,
+    body-2: 1.4rem,
+    caption: 1.2rem
+) !default;
+
+/* Spacer */
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 2),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    auto: auto
+) !default;
+
+$xy-border: (
+    top: t,
+    right: r,
+    bottom: b,
+    left: l,
+    all: a
+) !default;
+
+/* Breakpoints use in include-media mixin */
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px
+) !default;
+
+// 
+/* Grid options - to make grid */
+$grid: (
+    container: (
+        gap: 15,
+        responsive: (
+            sm: 540,
+            md: 720,
+            lg: 962,
+            xl: 1170,
+            xxl: 1570
+        )
+    ),
+    columns: (
+        max: 12,
+        gap: 30
+    ),
+    breakpoints: (
+        default: 0,
+        sm: 576,
+        md: 768,
+        lg: 992,
+        xl: 1200,
+        xxl: 1600
+    )
+) !default;

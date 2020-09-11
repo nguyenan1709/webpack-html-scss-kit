@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    &:after, &:before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overscroll-behavior: none;
+}
+
+body.srcoll-body-lock {
+    overflow-y: scroll !important;
+    position: fixed;
+    width: 100%;
+}
+
+.page-wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.page-content {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    transition: color .3s;
+
+    &:active {
+        color: inherit;
+    }
+
+    &:any-link {
+        &, &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+button {
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #CED0D4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #FFF;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+.btn--small {
+    height: 24px !important;
+    border-radius: 3px !important;
+    font-size: 12px !important;
+    padding: 5px 16px;
+}
+
+.btn--medium {
+    height: 32px !important;
+    font-size: 13px !important;
+    padding: 8px 20px;
+}
+
+.btn--default {
+    height: 36px !important;
+    font-size: 13px !important;
+}
+
+.btn--large {
+    height: 78px !important;
+    border-radius: 7px !important;
+    font-size: 18px !important;
+    padding: 27px 30px;
+}
+
+.btn-cms-primary {
+    background-color: #0373DB;
+
+    &:hover {
+        background-color: darken($color: #0373DB, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #0373DB, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #0373DB, $amount: 30%);
+    }
+}
+
+.btn-cms-secondary {
+    background-color: #747474;
+
+    &:hover {
+        background-color: darken($color: #747474, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #747474, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #747474, $amount: 30%);
+    }
+}
+
+.btn-cms-third {
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: darken($color: #FFFFFF, $amount: 5%);
+    }
+
+    &:active {
+        background-color: #0373DB
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #FFFFFF, $amount: 30%);
+    }
+}
+
+.btn-cms-success {
+    background-color: #00BB2C;
+
+    &:hover {
+        background-color: darken($color: #00BB2C, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #00BB2C, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #00BB2C, $amount: 30%);
+    }
+}
+
+.btn-cms-info {
+    background-color: #05B0E7;
+
+    &:hover {
+        background-color: darken($color: #05B0E7, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #05B0E7, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #05B0E7, $amount: 30%);
+    }
+}
+
+.btn-cms-warning {
+    background-color: #F8AA09;
+
+    &:hover {
+        background-color: darken($color: #F8AA09, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #F8AA09, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #F8AA09, $amount: 30%);
+    }
+}
+
+.btn-cms-danger {
+    background-color: #F2443C;
+
+    &:hover {
+        background-color: darken($color: #F2443C, $amount: 5%);
+    }
+
+    &:active {
+        background-color: darken($color: #F2443C, $amount: 15%);
+    }
+
+    &[disabled] {
+        background-color: lighten($color: #F2443C, $amount: 30%);
+    }
+}
+
+input {
+    box-shadow: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+button, select, input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}

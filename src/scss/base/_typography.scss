@@ -1,0 +1,33 @@
+html {
+    font-size: 50%;
+    font-family: $font-base;
+  
+    @include media(">=lg") {
+      font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    }
+}
+
+body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $color-dark;
+}
+
+/* Text size */
+@each $name, $font-size in $text-size {
+    .#{$name} {
+        font-size: $font-size !important;
+    }
+}
+
+/* List Unstyled */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Mark (highlight) */
+mark {
+    padding: .2em;
+    background-color: rgba($color-primary, .4);
+}
