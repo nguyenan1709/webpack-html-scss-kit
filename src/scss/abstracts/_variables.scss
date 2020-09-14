@@ -2,7 +2,6 @@
 $theme-colors: (
     primary: #0373DB,
     secondary:#747474,
-    third: #FFFFFF,
     success: #00BB2C,
     danger: #F2443C,
     warning: #F8AA09,
@@ -14,8 +13,8 @@ $theme-colors: (
     info: #05B0E7,
     light: #F8F9FE,
     dark: #343a40,
-    white: #fff,
-    text: #202124,
+    white: #FFFFFF,
+    shadow: #202124,
 ) !default;
 
 $color-primary: map-get($theme-colors, 'primary') !default;
@@ -32,7 +31,7 @@ $color-info: map-get($theme-colors, 'info') !default;
 $color-light: map-get($theme-colors, 'light') !default;
 $color-dark: map-get($theme-colors, 'dark') !default;
 $color-white: map-get($theme-colors, 'white') !default;
-$color-text: map-get($theme-colors, 'text') !default;
+$color-shadow: map-get($theme-colors, 'shadow') !default;
 
 /* Fonts */
 $font-base: "Arial", sans-serif !default;
