@@ -1,11 +1,26 @@
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>Boilerplate</title>
+    <title>New CMS KiotViet</title>
+    <link rel="stylesheet" href="/src/font-awesome-5/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-<div class="cat">
-    <div class="cat__photo"></div>
-    <div class="cat__title">product22</div>
-</div>
+    <include>_header.html</include>
+    <div class="filter-post">
+        <h2>Bài viết</h2>
+
+        <div class="filter-post-status">
+            <div class="filter-post-status__head">
+                <p>Trạng thái</p>
+                <i class="fas fa-angle-up"></i>
+            </div>
+
+            <div class="filter-post-status__opt">
+                <input type="radio" name="yesno" value="Yes" id="radio_0" tabindex="4" checked="checked">
+                <label for="radio_0">Yes</label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

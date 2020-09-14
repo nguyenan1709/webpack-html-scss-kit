@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <title>New CMS KiotViet</title>
+    <!-- <link rel="stylesheet" href="~/src/font-awesome-5/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <include>_header.html</include>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <div class="filter-post">
+                    <p class="heading-1 fw-bold">Bài viết</p>
+            
+                    <div class="filter-post-status">
+                        <div class="filter-post-status__head">
+                            <p class="fw-bold">Trạng thái</p>
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+            
+                        <div class="filter-post-status__opt">
+                            <div class="radio-wrapper">
+                                <input type="radio" name="status" value="all" id="radio_0" tabindex="1" checked="checked">
+                                <label for="radio_0">Tất cả</label>
+                            </div>
+
+                            <div class="radio-wrapper">
+                                <input type="radio" name="status" value="on" id="radio_1" tabindex="2" checked="checked">
+                                <label for="radio_1">Bật hiển thị</label>
+                            </div>
+
+                            <div class="radio-wrapper mb-0">
+                                <input type="radio" name="status" value="off" id="radio_2" tabindex="3" checked="checked">
+                                <label for="radio_2">Tắt hiển thị</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-post-status">
+                        <div class="filter-post-status__head">
+                            <p class="fw-bold">Theo ngày</p>
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+            
+                        <div class="filter-post-status__opt">
+                            <div class="radio-wrapper d-inline-block">
+                                <input type="radio" name="day" value="all" id="radio_3" tabindex="1" checked="checked">
+                                <label for="radio_3"></label>
+                            </div>
+
+                            <select>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="vw">VW</option>
+                                <option value="audi" selected>Audi</option>
+                              </select>
+
+                            <div class="radio-wrapper d-inline-block">
+                                <input type="radio" name="day" value="diffirence" id="radio_4" tabindex="2" checked="checked">
+                                <label for="radio_4"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

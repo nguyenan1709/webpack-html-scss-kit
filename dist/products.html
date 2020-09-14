@@ -1,11 +1,111 @@
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>Boilerplate</title>
+    <title>New CMS KiotViet</title>
+    <link rel="stylesheet" href="/src/font-awesome-5/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link href="./assets/css/styles.css" rel="stylesheet"></head>
 <body>
-<div class="cat">
-    <div class="cat__photo"></div>
-    <div class="cat__title">product22</div>
+    <div class="header-infor-wrapper">
+    <div class="container">
+        <div class="header-infor">
+            <div class="header-infor__logo">
+                <img src="../assets/svg/logo.svg" alt="">
+            </div>
+
+            <div class="header-infor__acc">
+                <div class="sync">
+                    <button class="icon-sync">
+                        <i class="fas fa-sync"></i>
+                        <img src="../assets/svg/dot-warning.svg" alt="" class="icon-dot-warning">
+                    </button>
+
+                    <span>Đồng bộ thủ công <i class="fas fa-caret-down"></i></span>
+
+                    <div class="sync-hint">
+                        <div class="title">Đồng bộ không thành công</div>
+                        <div class="content">
+                            <p>Đồng bộ thủ công đã thành công lần cuối</p>
+                            <p>16:29 - 30/08/2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-cms-success mr-8px btn--medium">
+                    <i class="far fa-pencil-paintbrush mr-8px"></i> Tùy biến hình thức
+                </button>
+
+                <button class="btn-cms-primary btn--medium name-department">
+                    <i class="far fa-store mr-8px"></i> xedaphanoi...
+
+                    <img src="../assets/svg/dot-warning.svg" alt="" class="icon-dot-warning">
+
+                    <div class="name-department-hint">
+                        <div class="text">
+                            <div class="expired-date">
+                                <p class="text-black mb-2">Hiệu lực</p>
+                                <p class="text-success fw-bold">Còn 1095 ngày</p>
+                                <!-- <p class="text-danger">Còn 30 ngày</p>
+                                <p class="text-third">Chưa có hiệu lực</p>
+                                <p class="text-danger">Hết hiệu lực</p> -->
+                            </div>
+
+                            <div class="status">
+                                <p class="text-black mb-2">Tình trạng</p>
+                                <p class="text-success fw-bold">Đã phát hành</p>
+                                <!-- <p class="text-danger">Chưa phát hành</p>
+                                <p class="text-danger">Đã hết hạn</p> -->
+                            </div>
+                        </div>
+
+                        <div class="view">
+                            <a href="">
+                                <i class="far fa-eye mr-8px"></i> Xem trang
+                            </a>
+
+                            <p class="text-black">Để được hỗ trợ liên hệ qua số hotline: <span class="text-info">1900 6522</span></p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="header-menu-wrapper">
+    <div class="container">
+        <div class="header-menu">
+            <ul>
+                <li class="active"><i class="fas fa-list-ul mr-8px"></i> Danh mục</li>
+                <li><i class="far fa-box-alt mr-8px"></i> Hàng hóa</li>
+                <li><i class="fal fa-pen-nib mr-8px"></i> Bài viết</li>
+                <li><i class="fal fa-file-invoice mr-8px"></i> Đơn hàng</li>
+                <li><i class="fal fa-cog mr-8px"></i>Thiết lập</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="filter-post">
+        <h2>Bài viết</h2>
+
+        <div class="filter-post-status">
+            <div class="filter-post-status__head">
+                <p>Trạng thái</p>
+                <i class="fas fa-angle-up"></i>
+            </div>
+
+            <div class="filter-post-status__opt">
+                <label class="radio-wrapper">Tất cả
+                    <input type="radio" name="status" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="radio" name="status" value="all">Tất cả
+            </div>
+        </div>
+    </div>
 <script type="text/javascript" src="./assets/js/bundle.js"></script></body>
 </html>
